@@ -1,6 +1,8 @@
 // This function accepts numbers as string from 0 to 9 and return the appropriate number.
 // Returns -1 if input is invalid
 function getNumFromString(num) {
+  if (typeof num !== 'string') return -1;
+
   const numLower = num.toLowerCase();
 
   if (numLower === 'one') return 1;
