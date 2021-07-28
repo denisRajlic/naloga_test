@@ -19,7 +19,7 @@ function getNumFromString(num) {
 }
 
 function getResult(inputString) {
-  if (typeof inputString !== 'string') return 'Input must be of type string';
+  if (typeof inputString !== 'string') return -1;
 
   const numArray = inputString.split('-');
 
@@ -28,12 +28,14 @@ function getResult(inputString) {
   let returnString = '';
   let number = 0;
   let result = 0;
+  let invalidCount = 0;
 
   numArray.forEach((num, index) => {
     number = getNumFromString(num);
 
     // Check if input was invalid
     if (number === -1) {
+      invalidCount++;
       // if the invalid number is the last one in the array, replace the + with = and append the result
       if (index === numArray.length - 1)
         return (returnString = returnString.slice(0, -1) + `=${result}`);
@@ -45,6 +47,8 @@ function getResult(inputString) {
     if (index !== numArray.length - 1) returnString += `${number}+`;
     else returnString += `${number}=${result}`;
   });
+
+  if (invalidCount === numArray.length) return -1;
 
   return returnString;
 }
