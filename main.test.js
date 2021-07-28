@@ -33,3 +33,9 @@ it('excepts upper or lowercase strings as input', () => {
 
   expect(result).toEqual('1+2+3+0=6');
 });
+
+it('checks that the input is of type string', () => {
+  let result = getResult(3);
+
+  expect(result).toEqual('Input must be of type string');
+});

@@ -19,6 +19,8 @@ function getNumFromString(num) {
 }
 
 function getResult(inputString) {
+  if (typeof inputString !== 'string') return 'Input must be of type string';
+
   const numArray = inputString.split('-');
 
   if (numArray.length === 1) return getNumFromString(inputString);
