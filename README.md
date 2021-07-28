@@ -7,3 +7,19 @@ Example:
 ```js
 getResult('one-two-five-zero'); // Returns - "1+2+5+0=8"
 ```
+
+## Install dependencies (jest for testing)
+
+Run following command:
+
+```
+npm install
+```
+
+## How to test
+
+Run following command:
+
+```
+npm run test
+```
