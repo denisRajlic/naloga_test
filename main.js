@@ -47,4 +47,4 @@ function getResult(inputString) {
   return returnString;
 }
 
-console.log(getResult('one-two-seven-four-nine-zero'));
+module.exports = getResult;

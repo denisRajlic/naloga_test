@@ -1,0 +1,23 @@
+{
+  "name": "naloga_test",
+  "version": "1.0.0",
+  "description": "Function getResult takes in a string argument, checks if it's a valid number between 0 and 9 and returns the result.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisRajlic/naloga_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisRajlic/naloga_test/issues"
+  },
+  "homepage": "https://github.com/denisRajlic/naloga_test#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
